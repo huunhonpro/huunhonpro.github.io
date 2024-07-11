@@ -54,7 +54,7 @@
             <h2 class="sub-title">#Sàn Gỗ Cao Cấp 2024</h2>
             <h1>Sale Up To 50%</h1>
             <!-- todo04 Thay đổi tên nút nếu cần -->
-            <p><a href="uu-dai.html" target="_blank" class="btn btn-black rounded-0">Xem Ngay</a></p>
+            <p><a href="san-nhua-ngoai-troi.html" target="_blank" class="btn btn-black rounded-0">Xem Ngay</a></p>
             </div>
           </div>
           <div class="col-md-6 order-1 align-self-end">
@@ -93,10 +93,7 @@
               <img src="images/1.san-nhua-hem-khoa.png" alt="Image" class="img-fluid">
             </a>
             <h2 class="item-title"><a href="giay-nu-cao-got-p02.html">Sàn Nhựa Hèm Khóa</a></h2>
-            <!-- <strong class="item-price"><del>VND 1.000.000</del> VND 700.000</strong> -->
-            <button id="btn-buy" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-              Liên Hệ<!-- todo11 Thay đổi nút bấm nếu cần -->
-            </button>
+            <strong class="item-price"><del>VND 1.000.000</del> VND 700.000</strong>
           </div>
           <!-- Kết thúc HTML markup của sản phẩm 2 -->
 
@@ -266,78 +263,6 @@
   <script src="js/main.js"></script>
    
   <script src="js/main.js"></script>
-  <!-- Modal -->
-<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">Thông tin của bạn</h5>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <form name="submit-to-google-sheet">
-      <div class="modal-body">
-        <p id="product-info"></p>
-      <!-- todo16 Thay đổi thông tin nhận từ khách hàng -->
-      <div class="form-group row">
-              <div class="col-md-12">
-                <label for="customer_name" class="text-black">Tên của bạn <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="customer_name" name="customer_name" required>
-              </div>
-            </div>
-            <div class="form-group row">
-              <div class="col-md-12">
-                <label for="customer_phone" class="text-black">Số điện thoại <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="customer_phone" name="customer_phone" required>
-              </div>
-            </div>
-            <div class="form-group row">
-              <div class="col-md-12">
-                <label for="customer_email" class="text-black">Email <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="customer_email" name="customer_email" required>
-              </div>
-            </div>
-            <div class="form-group row">
-              <div class="col-md-12">
-                <label for="customer_address" class="text-black">Địa chỉ <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="customer_address" name="customer_address" required>
-              </div>
-            </div>
-            <div class="form-group row">
-              <div class="col-md-12">
-                <label for="customer_message" class="text-black">Lời nhắn <span class="text-danger"></span></label>
-                <input type="text" class="form-control" id="customer_message" name="customer_message">
-              </div>
-            </div>
-            <input type="hidden" name="product_id">
-      </div>
-      <div class="modal-footer">
-        <button type="submit" class="btn btn-primary">Nhận Báo Giá</button>
-      </div>
-    </form>
-  </div>
-</div>
-</div>
-<script>
-$(window).on('shown.bs.modal', function() { 
-    let productName = $("#product-name").text();
-    let productPrice = $("#product-price").text();
-    let productSize = $('#product-sizes').find(":selected").text();
-    let productId = $("#product-name").attr("data-product-id");
-    $("#product-info").text(productName + productSize + productPrice);
-    $('input[name="product_id"]').val(productId);
-});
-// todo17 đường dẫn tới script -->
-const scriptURL = 'https://script.google.com/macros/s/AKfycbynZ3OqhLDws0yB7idDTn23gW7fW9j3uAmu3lw2qTLG-spDLVhP/exec'
-const form = document.forms['submit-to-google-sheet']
 
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {console.log('Success!', response); window.location = 'thankyou.html'})
-    .catch(error => {console.error('Error!', error.message); alert('Có lỗi xảy ra, vui lòng liên hệ <email> để được hỗ trợ mua hàng.')})
-});
-</script>
   </body>
 </html>

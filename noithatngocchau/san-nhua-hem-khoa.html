@@ -251,7 +251,7 @@
 				        <input type="hidden" name="product_id">
 		      </div>
 		      <div class="modal-footer">
-		        <button type="submit" class="btn btn-primary">Đặt hàng</button>
+		        <button type="submit" class="btn btn-primary">Nhận Báo Giá</button>
 		      </div>
 	      </form>
 	    </div>
@@ -267,13 +267,13 @@
 		    $('input[name="product_id"]').val(productId);
 		});
     // todo17 đường dẫn tới script -->
-		const scriptURL = 'https://script.google.com/macros/s/AKfycbynZ3OqhLDws0yB7idDTn23gW7fW9j3uAmu3lw2qTLG-spDLVhP/exec'
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbx2dVsSTRMkwkHSNnoxQR90LAK_z7L7GnQHgYUUzmbtgKOLX39YQ52_g5UwrjwQBwA/exec'
 		const form = document.forms['submit-to-google-sheet']
 
 		form.addEventListener('submit', e => {
 		  e.preventDefault()
 		  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-		    .then(response => {console.log('Success!', response); window.location = 'thankyou.html'})
+		    .then(response => {console.log('Success!', response); window.location = 'cam-on.html'})
 		    .catch(error => {console.error('Error!', error.message); alert('Có lỗi xảy ra, vui lòng liên hệ <email> để được hỗ trợ mua hàng.')})
 		});
 	</script>
