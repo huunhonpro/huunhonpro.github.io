@@ -2,7 +2,7 @@
 <html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
   <head>
   	<!-- todo01 Thay đổi tiêu đề trang -->
-    <title>ShopMax - sản phẩm giày nữ</title>
+    <title>Nội Thất Ngọc Châu - Sàn Nhựa Hèm Khóa </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -41,7 +41,7 @@
           <div class="logo">
             <div class="site-logo">
               <!-- todo02 Thay đổi thương hiệu tại đây nếu cần -->
-              <a href="index.html" class="js-logo-clone">ShopMax</a>
+              <a href="index.html" class="js-logo-clone">Nội Thất Ngọc Châu</a>
             </div>
           </div>
         </div>
@@ -51,9 +51,9 @@
     <div class="bg-light py-3">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 mb-0"><a href="index.html">Home</a> <!-- todo04 Thay đổi tên trang chủ nếu cần -->
+          <div class="col-md-12 mb-0"><a href="index.html">Trang chủ</a> <!-- todo04 Thay đổi tên trang chủ nếu cần -->
             <span class="mx-2 mb-0">/</span>
-            <strong class="text-black">Giày Nữ Cao Gót</strong> <!-- todo05 Thay đổi tên sản phẩm -->
+            <strong class="text-black">Sàn Nhựa Hèm Khóa</strong> <!-- todo05 Thay đổi tên sản phẩm -->
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
           <div class="col-md-6">
             <div class="item-entry">
               <a href="#" class="product-item md-height bg-gray d-block">
-                <img src="images/prod_3.png" alt="Image" class="img-fluid"> <!-- todo06 Thay đổi ảnh sản phẩm -->
+                <img src="images/1.san-nhua-hem-khoa.png" alt="Image" class="img-fluid"> <!-- todo06 Thay đổi ảnh sản phẩm -->
               </a>
               
             </div>
@@ -73,30 +73,30 @@
           </div>
           <div class="col-md-6">
           	<!-- todo07 Thay đổi ID sản phẩm, tên sản phẩm -->
-            <h2 class="text-black" data-product-id="P02" id="product-name">Giày Nữ Cao Gót</h2>
+            <h2 class="text-black" data-product-id="SNHK02" id="product-name">Sàn Nhựa Hèm Khóa</h2>
             <!-- todo08 Thay đổi miêu tả cho sản phẩm -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, vitae, explicabo? Incidunt facere, natus soluta dolores iusto! Molestiae expedita veritatis nesciunt doloremque sint asperiores fuga voluptas, distinctio, aperiam, ratione dolore.</p>
-            <p class="mb-4">Ex numquam veritatis debitis minima quo error quam eos dolorum quidem perferendis. Quos repellat dignissimos minus, eveniet nam voluptatibus molestias omnis reiciendis perspiciatis illum hic magni iste, velit aperiam quis.</p>
+            <p>“Sàn nhựa hèm khóa là một lựa chọn tuyệt vời cho việc lát nền trong không gian sống hoặc văn phòng. Với hệ thống hèm khóa, việc lắp đặt trở nên dễ dàng hơn bao giờ hết. Sàn nhựa hèm khóa có độ bền cao, chống trầy xước và dễ dàng vệ sinh. Bạn có thể tận hưởng vẻ đẹp tự nhiên của gỗ hoặc hiện đại của các mẫu sàn nhựa hèm khóa đa dạng.”</p>
+            <p class="mb-4">Nếu bạn cần thêm thông tin hoặc có bất kỳ câu hỏi nào khác, đừng ngần ngại hỏi thêm nhé! </p>
             <!-- todo09 Thay đổi giá tiền -->
-            <p>
+            <!-- <p>
               <del>VND 1.000.000</del>
-              <strong class="text-primary h4" id="product-price">VND 700.000</strong></p>
+              <strong class="text-primary h4" id="product-price">VND 700.000</strong></p> -->
             <div class="mb-1 d-flex">
               <div class="form-group">
-			    <label for="product-sizes">Chọn cỡ</label>
+			    <label for="product-sizes">Chọn màu sắc</label>
 			    <!-- todo10 Thay đổi cỡ -->
 			    <select class="form-control" id="product-sizes">
-			      <option>36</option>
-			      <option>37</option>
-			      <option>38</option>
-			      <option>39</option>
-			      <option>40</option>
+			      <option>Màu gỗ tự nhiên</option>
+			      <option>Màu sồi tự nhiên</option>
+			      <option>Màu gỗ ấm</option>
+			      <option>Màu sồi tươi sáng</option>
+			      <option>Màu sồi đậm</option>
 			    </select>
 			  </div>
             </div>
             
 			<button id="btn-buy" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-			  Mua hàng <!-- todo11 Thay đổi nút bấm nếu cần -->
+			  Nhận báo giá <!-- todo11 Thay đổi nút bấm nếu cần -->
 			</button>
           </div>
         </div>
@@ -263,7 +263,7 @@
 		    let productPrice = $("#product-price").text();
 		    let productSize = $('#product-sizes').find(":selected").text();
 		    let productId = $("#product-name").attr("data-product-id");
-		    $("#product-info").text(productName + ' | Cỡ ' + productSize + ' | ' + productPrice);
+		    $("#product-info").text(productName + ' | ' + productSize + ' | ' + productPrice);
 		    $('input[name="product_id"]').val(productId);
 		});
     // todo17 đường dẫn tới script -->
